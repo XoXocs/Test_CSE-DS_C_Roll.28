@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="product-card">
+        <img src="download.jpg" alt="Sample Product">
+        <h2>Sample Product</h2>
+        <p>Rs. 15</p>
+        <p> This is a description of product.</p>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" value="1" min="1" oninput="updateTotal()">
+        <p id="total-price">Total Price: Rs. 15</p>
+        <button onclick="buyNow()">Buy Now</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
